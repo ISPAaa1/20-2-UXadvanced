@@ -5,20 +5,51 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&family=Russo+One&display=swap" rel="stylesheet">
 	<style type="text/css">
 		html{font-family: 'Noto Sans KR', sans-serif;}
-		body,h1,h2,p{margin:0;}
+		body,h1,h2,h3,p{margin:0;}
 		body{background-color: black;}
 		img{display: block;width: 100%}
 		header{background-image: url(title_bg.png);height: 720px; margin-bottom: 0px;}
-		section,footer{width: 900px;margin: auto;}
+		.howto{width: 700px;}
+		section,footer{width: 750px;margin: auto;}
+		.section-bic{width: 1000px; margin: left;}
 		header{height: 720px; text-align: center;}
 		h1{text-align: center; text-shadow: 2px 2px 6px #353535; color: white; font-size: 4em; padding-top: 50px; padding-bottom: 10px;font-family: 'Russo One', sans-serif;}
-		header h2{text-align: center;color: lightgray;line-height: 40px;}
-		header p{color: lightgray; line-height: 30px;font-size: 1.2em;{font-weight: 400;}}
+		h3{font-size: 3.6em; font-weight: 900; color: white; margin-left: : 10px; margin-bottom: 20px;margin-right: 25px;}
+		header h2{text-align: center;color: lightgray;line-height: 40px;text-shadow: 2px 2px 4px #353535;}
+		header p{color: lightgray; line-height: 30px;font-size: 1.2em;font-weight: 400;text-shadow: 2px 2px 4px #353535;}
 		header img{display:block; width: 200px; border-radius: 10%; box-shadow: 3px 3px 7px #353535; margin:auto; margin-top: 110px;}
-		section{margin-bottom: 50px; padding-bottom: 100px;}
+		section{margin-bottom: 130px; padding-bottom: 100px;}
+		.introduce{width: 400px; margin: 5px; text-align: right;}
+		.intro-line1{margin-top: 27px;margin-bottom: 20px; margin-right:6px; font-size: 1.35em; font-weight: 700;  text-align: right;}
+		.intro-line2{margin-top: 22px;margin-bottom: 22px; margin-left:6px; font-size: 1.35em; font-weight: 700; line-height: 1.4em; text-align: left;}
+		.goalimg,.howto1{display: flex; justify-content: center;}
+		.leftflex{display: flex;}
 		section img{width: 600px; margin: auto;}
-		section h2{color: orange; text-align: center;}
+		section h2{color: orange; text-align: center; font-size: 2em;}
+		section p{font-weight: 100; line-height: 1.8em;}
+		.center{margin-top: 15px; line-height: 100px;}
+		.left{text-align: left; line-height: 1.5em; margin-bottom: 50px;}
 		p{color: white;text-align: center;}
+		.end{margin-bottom: 100px;}
+		.img-howto1{margin-right:25px; width: 270px; border-radius: 20px;}
+		.img-howto4{width: 300px; border-radius: 20px;}
+		.bic{width: 250px; margin:0; margin-right: 25px; margin-bottom: 30px; border-radius: 20px;}
+		.p-howto{text-align: left;}
+		.p-howto2{text-align: left; margin-top: 15px;}
+		.p-howto4{text-align: left; margin-top: 30px;}
+		.p-sort{display: inline; text-align: left; font-size: 1.3em; font-weight: 700;line-height: 2em;}
+		.p-sort-red{display: inline; text-align: left; font-size: 1.3em; font-weight: 700;line-height: 2em; color: red;}
+		.p-sort-blue{display: inline; text-align: left; font-size: 1.3em; font-weight: 700;line-height: 2em; color: blue;}
+		.p-sort-yellow{display: inline; text-align: left; font-size: 1.3em; font-weight: 700;line-height: 2em; color: yellow;}
+		.p-sort-green{display: inline; text-align: left; font-size: 1.3em; font-weight: 700;line-height: 2em; color: green;}
+		.biccaption{text-align: left; font-size: 0.85em; color: gray; line-height: 1.8em; margin-top: 180px;}
+		.epilcaption{font-size: 0.85em; color: gray; line-height: 1.8em; margin-bottom: 30px;}
+		.howtoblank{height: 120px;}
+		.screenshots{display: flex; justify-content: center; margin-top: 200px; margin-bottom: 300px;}
+		.screenshot{width: 10%}
+		.epil{width: 220px; margin:0; padding: 5px; margin-top: 30px;}
+		.vidcenter{width: 700px; height: 394px; margin:auto;}
+		.button{width: 200px;}
 		footer{text-align: center; font-size: 0.8em; color: gray; padding-bottom: 150px;}
 	</style>
 </head>
@@ -31,38 +62,123 @@
 			<h2>BIC Make Play Jam 3rd_Adventure</h2>
 			<p>Team. 굥욷굥욷</p>
 		</header>
+
 		<section>
 			<img src=title_illust.png>
-			<h2>게임 소개</h2>
-			<p>게임 제목: Please STAY INSIDE<br>
+			<h2 class="center">::게임 소개::</h2>
+			<p class="end">게임 제목: Please STAY INSIDE<br>
 				팀 이름: 굥욷굥욷<br>
 				게임장르: 타이쿤<br>
 				플랫폼: PC/ WEB
 			</p>
-			<img src="title_scr.png"><img src="play_scr.png">
+			<div class="goalimg">
+				<div>
+					<img class="introduce" src="title_scr.png">
+					<p class="intro-line1">무사히 자가격리를 마치도록 도와보자!</p>
+				</div>
+				<div>
+					<p class="intro-line2">방 안에 격리된<br>자가격리자들에게 보급품을 전달하여</p>
+					<img class="introduce" src="play_scr.png">
+				</div>
+			</div>
+		</section>
+
+		<section class="howto">
+			<h2 class="center">::플레이 방법::</h2>
+			<br>
+			<div class="howto1">
+				<img class="img-howto1" src="howto1.png">
+				<div>
+					<h3>1</h3>
+					<p class="p-howto">각 자가격리자는 아래 4개의 스텟을 가지고 있습니다.<br>각 스탯은 지속적으로 감소합니다.</p>
+					<p class="p-sort-red"> 배부름</p>
+					<p class="p-sort"> / </p>
+					<p class="p-sort-blue"> 건강</p>
+					<p class="p-sort"> / </p>
+					<p class="p-sort-yellow"> 정신력</p>
+					<p class="p-sort"> / </p>
+					<p class="p-sort-green"> 외로움</p>
+				</div>
+			</div>
+			<div class="howtoblank"></div>
+			<div class="howto1">
+				<h3>2</h3>
+				<div>
+					<p class="p-howto2">플레이어는 6종류의 보급품을 이용해,<br>해당 스텟이 0이 되지 않도록 유지해야 합니다. </p>
+				</div>
+			</div>
+			<img src="howto2.png">
+			<div class="howtoblank"></div>
+			<div class="howto1">
+				<h3>3</h3>
+				<div>
+					<p class="p-howto2">하단의 보급품 로고를 클릭하고,<br>보급하고자 하는 방을 클릭하면 해당 방에 보급품이 보급됩니다. </p>
+				</div>
+			</div>
+			<img src="howto3.png">
+			<div class="howtoblank"></div>
+			<div class="howto1">
+				<h3>4</h3>
+				<div>
+					<p class="p-howto4">보급을 받은 방은 일정 시간 동안 추가 보급을 받을 수 없습니다.</p>
+				</div>
+			</div>
+			<img class="img-howto4" src="howto4.png">
+			<div class="howtoblank"></div>
+			<div class="howto1">
+				<h3>5</h3>
+				<div>
+					<p class="p-howto2">스텟이 낮은채로 일정 시간이 방치되면 자가격리자는 탈출합니다.<br>반대로 스텟을 높은 수준으로 유지하면, 자가격리자의 확진 확률이 낮아집니다. </p>
+				</div>
+			</div>
+			<img src="howto5.png">
+			<div class="howtoblank"></div>
+			<div class="howto1">
+				<h3>6</h3>
+				<div>
+					<p class="p-howto2">1분이 지나 하루가 종료되면 하루 결산이 진행됩니다.<br>일정 수 이상의 탈출 인원이 생기거나, 일정 일자를 버티게 되면 게임이 종료됩니다.</p>
+				</div>
+			</div>
+			<img src="howto6.png">
+		</section>
+		<div class="screenshots">
+			<img class="screenshot" src="grandma_front.gif">
+			<img class="screenshot" src="daughter_front.gif">
+			<img class="screenshot" src="papa_front.gif">
+			<img class="screenshot" src="grandpa_front.gif">
+			<img class="screenshot" src="mama_front.gif">
+			<img class="screenshot" src="son_front.gif">
+		</div>
+		<section>
+			<h2 class="left">+<br>‘게임잼’?</h2>
+			<div class="leftflex">
+				<img class="bic" src=bic.png>
+				<p class="biccaption">내가 참여한 BIC 게임잼.<br>부산정보산업진흥원에서 주최하고, 부산인디커넥트에서 주관했다.<br>선정된 상위 3팀은 2020 부산인디커넥트페스티벌에 출품할 자격이 부여된다.</p>
+			</div>
+ 			<p class="p-howto">게임잼이란, 아마추어부터 프로까지 다양한 형태의 인디게임 개발자들이 랜덤하게 모여 <br>짧은 기간(1~4일) 안에 하나의 게임을 만들어내는 대회 행사를 말한다. <br>한 팀을 이루기 위해서는 일반적으로 기획자, 프로그래머, 아티스트 세 직군이 모이기 때문에<br>게임 버전의 단기 해커톤으로 볼 수 있다.</p>
 		</section>
 		<section>
-			<img src=grandpa_idle.gif>
-			<h2>게임 플레이 방법</h2>
-			<p>1.~7.</p>
-			<p>코로나 방역에 힘 써주시는 모든 분께 정말 감사드립니다.<br>이 페이지 보시는 분들 모두 건강하세요(_ _)</p>
+			<h2 class="left">+<br>에필로그</h2>
+			<p class="p-howto">원래 게임잼은 모르는 사람들이 ‘게임’이라는 단 하나의 구심점만으로 모여서 한 공간에서 합숙하고,<br>다같이 밤새가며 ‘일하는 MT’를 하는 것이 일반적인 모습이었다.<br>하지만 이번 BIC 게임잼은 코로나 사태로 인해 이례적으로 온라인으로 진행되었다.<br>오프라인이었으면 다른 팀 방에 난입해서 방해(를 빙자한 놀자판)하기도 하고, <br>함께 야식을 시켜먹기도 하고,<br>운영진이 주최하는 돌발 이벤트도 참여하고,<br>스텝들이 나눠주는 각종 보급품-굿즈부터 간식까지-도 나눠먹을 수 있었을 텐데...<br>온라인이다보니 이사람 저사람 만나며 앞으로 함께 게임업계에 종사하게 될 많은 사람들과<br>소통할 수 있는 기회가 확실히 적어 아쉽긴 했다.</p>
+			<div class="howto1">
+				<img class="epil" src="epilogue1.jpg">
+				<img class="epil" src="epilogue2.jpg">
+			</div>
+			<p class="epilcaption">본 행사 몇 일 전 집으로 배송된 보급박스! 진짜 보급상자처럼 생겨서 너무 재밌었다&#x1F602;&#x1F602; </p>
+ 			<p class="p-howto">게임잼이란, 아마추어부터 프로까지 다양한 형태의 인디게임 개발자들이 랜덤하게 모여 <br>짧은 기간(1~4일) 안에 하나의 게임을 만들어내는 대회 행사를 말한다. <br>한 팀을 이루기 위해서는 일반적으로 기획자, 프로그래머, 아티스트 세 직군이 모이기 때문에<br>게임 버전의 단기 해커톤으로 볼 수 있다.</p>
 		</section>
 		<section>
-			<img src=bic.png>
-			<h2>BIC게임잼?</h2>
-			<p>모르는 사람들이 한 공간에 모여 합숙하면서 다같이 시체가 되어가며 ‘일하는 MT’를 하는 것이 게임잼의 원래 모습이었는데, 이번 BIC 게임잼은 코로나 사태로 인해 올해 이례적으로 온라인으로 진행하게 된 행사였다. 오프라인이었으면 다른 팀 방에 난입해서 방해(를 빙자한 놀자판)하기도 하고, 함께 야식을 시켜먹기도 하고, 운영진이 나눠주는 각종 보급품(티, 선풍기부터 야식거리까지), 돌발이벤트까지 즐길 수 있었을 텐데... 온라인이다보니 이사람 저사람 만나며 앞으로 함께 게임업계에 종사할 많은 사람들과 소통할 수 있는 기회는 확실히 줄어 아쉬웠다. 뭔가 정말 재택근무만 하다 끝난 느낌도 들고…</p>
- 			<p>그래도 운영진이 태풍과 코로나 속에 보급상자를 정성스럽게 꾸려서(!) 한사람 한사람 택배를 보내주셔서, 행사 전부터 너무 감사하면서도 굉장한 설렘 속에 참여할 수 있게 된 것 같다. 작업 중에 쿨하게 보내주시는 치킨과 편의점 기프티콘은… 밤샘 속 한줄기 빛…!</p>
+			<h2 class="center">::플레이 영상::</h2>
+			<p align="center">
+				<video class="vidcenter" width="320" height="240" controls>
+				  <source src="movie.mp4" type="video/mp4">
+				</video>
+			</p>
 		</section>
 		<section>
-			<img src=success.png>
-			<h2>에필로그</h2>
-			<p>버스짤 넣기</p>
-		</section>
-		<section>
-			<img src=success.png>
-			<h2>게임 플레이해보기</h2>
+			<h2 class="center">::게임 플레이해보기::</h2>
 			<p>
-				<A href="https://notonalcyone.itch.io/please-stay-inside"> >>CLICK HERE!<< </A>
+				<a href="https://notonalcyone.itch.io/please-stay-inside" target="_new"> <img class="button" src="b_upress.png"></a>
 			</p>
 		</section>
 		<footer>©2020. Juna Won. All rights reserved.</footer>
